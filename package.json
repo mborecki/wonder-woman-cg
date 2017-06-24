@@ -1,0 +1,22 @@
+{
+  "name": "wonder-woman-cg",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "build": "browserify ./workspace/index.ts -p tsify > bundle.js",
+    "watch": "watchify ./workspace/index.ts -p tsify -o bundle.js -v",
+    "test": "jest --notify --config=jest.conf.json"
+  },
+  "author": "M.Borecki",
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "tsify": "^3.0.1",
+    "typescript": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "jest": "^19.0.2",
+    "ts-jest": "^19.0.8",
+    "watchify": "^3.9.0"
+  }
+}
